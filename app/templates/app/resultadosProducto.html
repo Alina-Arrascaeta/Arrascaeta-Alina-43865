@@ -1,0 +1,33 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+
+{% block cabecera %}
+  Resultados de la búsqueda:{{ precio }}  
+{% endblock cabecera %}
+    
+
+{% block contenido %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+    
+        {% for producto in db %}
+        <tr>
+            <td>{{ producto.id }}</td>
+            <td>{{ producto.nombre }}</td>
+            <td>{{ producto.precio }}</td>
+        </tr>
+        {% endfor %}
+    
+    
+     </tbody>
+    </table>
+
+{% endblock contenido %}

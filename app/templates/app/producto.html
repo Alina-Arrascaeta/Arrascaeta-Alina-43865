@@ -1,0 +1,57 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+
+{% block titulo %}
+    Productos
+{% endblock titulo %}
+    
+{% block cabecera %}
+    Listado de productos 
+{% endblock cabecera %}
+    
+
+{% block contenido %}
+<form action="/app/buscar3" method="get">
+    {% csrf_token %}
+    <input type="text" name="precio" id="precio">
+    <input type="submit" value="Buscar">
+
+
+<table>
+    <tr>
+        <td width="200"><h2>Productos</h2></td>
+        <td>
+            <a
+            href="{% url 'form_producto' %}"
+            class="btn btn-primary btn-sm"
+            ><i class="fa fa-plus fa-lg" title="New Record"> </i>
+            </a>
+        </td>
+    </tr>
+</table>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for producto in db %}
+    <tr>
+        <td>{{ producto.id }}</td>
+        <td>{{ producto.nombre }}</td>
+        <td>{{ producto.precio }}</td>
+    </tr>
+
+
+    
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock contenido %}
+</form>

@@ -1,0 +1,42 @@
+{% extends 'app/base.html' %} 
+{% load static %} 
+{% block titulo %}Empleado{% endblock titulo %} 
+{% block cabecera %}Empleado{% endblock cabecera %} 
+{% block contenido %}
+<table>
+    <tr>
+        <td><h2>Empleado: {{object}}</h2></td>
+    </tr>
+</table>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Cargo</th>
+      <th>Email</th>
+      <th>Telefono</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>{{ object.id }}</td>
+      <td>{{ object.nombre }}</td>
+      <td>{{ object.apellido }}</td>
+      <td>{{ object.cargo }}</td>
+      <td>{{ object.email }}</td>
+      <td>{{ object.telefono }}</td>
+    </tr>
+
+  </tbody>
+</table>
+<a
+href="{% url 'empleados' %}"
+class="btn btn-danger"
+style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+><i class="fa fa-share fa-sm" title="List Back">Volver</i>
+</a>
+{% endblock contenido %}

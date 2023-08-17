@@ -1,0 +1,36 @@
+Proyecto final Coderhouse
+Curso: Python
+Comisión: 43865
+Alumno: Arrascaeta, Alina Mariel
+Nombre: Tu Cerveceria
+
+Página Web destinada a usuarios que pueden sistematizar los datos de las personas que forman
+parte del entorno del negocio y de los productos.
+
+La página web cuenta con un menú, en la cual el usuario será requerido ingresar mediante usuario y clave; en caso de no estar registrado, poder registrarse para crear el usuario, cuando el sistema valida autenticación, el usuario tendrá acceso y podrá visualizar el menú de la página web donde se desplegarán todas las funcionalidades.
+
+Acciones a realizar:
+
+Visualizar listado de cervezas, buscar el producto mediante precio, agregar producto.
+Alta, modificación y baja de clientes.
+Alta, modificación y baja de proveedores.
+Alta, modificación y baja de empleados.
+Visualización de datos, de manera individual según dato que se seleccione, dentro de clientes,
+empleados o proveedores.
+Crear usuario. 
+Editar el perfil de Usuario.
+Cerrar Sesión.
+Login en caso de haber cerrado sesión.
+Modificación de Avatar.
+Visualización de panel administrador para rol administrador.
+Asignación de permisos en caso de ser ADMIN.
+
+Tecnologías Utilizadas:
+Front-End: HTML 5, CSS 3, Javascript, Bootstrap.
+Back-End: Python, Django. 
+
+Pruebas Realizadas
+Ver archivo: "Casos de Test.xls" el cual se encuentra en el presente repositorio https://github.com/johannesgperez/ProyectoFinalMain.git
+
+Video Demostración
+https://youtu.be/O3tgo0Txl9Q
